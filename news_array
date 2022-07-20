@@ -1,0 +1,49 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	
+	
+	char ch='a';
+	int y,x;
+	
+	while(ch !='\n'){
+		cin>>ch;
+		if(ch=='N'){
+			
+			y++;
+			
+		}
+		else if(ch=='S'){
+			y--;
+		}
+		else if(ch=='E'){
+			x++;
+		}
+		else if(ch=='W'){
+			x--;
+		}
+	}
+//	cout<<x<<" "<<y;
+
+while(x>0){
+	cout<<'E';
+	x--;
+}
+while(y<0){
+	cout<<'N';
+	y--;
+}
+
+while(x<0){
+	cout<<'S';
+	y++;
+	
+	}
+while(y>0){
+	cout<<'W';
+	x++;
+}
+	return 0;
+}
