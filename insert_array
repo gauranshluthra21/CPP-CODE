@@ -1,0 +1,51 @@
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	
+	
+	int i,j,n;
+	int a[100];
+	int pos,no;
+	
+	cin>>n;
+	
+	for(i=0;i<n;i++){
+		cin>>a[i];
+	}
+	
+	cout<<"enter pos"<<endl;
+	cin>>pos;
+	
+	if(pos>n){
+		
+		cout<<"invalid range"<<endl;
+	}
+	
+	else{
+		
+		--pos;
+		
+		cin>>no;
+			
+		}
+		
+		
+		for(i=n;i>pos-i;i--){
+			a[i+1]=a[i];
+		}
+		
+		
+		a[pos]=no;
+		
+		for(i=0;i<n;i++){
+			cout<<a[i];
+		}		
+		cout<<endl;
+	
+	
+	
+	return 0;
+}
